@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Go
+**/go.mod
+**/go.sum
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
