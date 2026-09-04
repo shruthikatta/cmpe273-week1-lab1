@@ -70,6 +70,9 @@ $ curl -s -w "\nHTTP %{http_code}\n" "http://127.0.0.1:8081/call-echo?msg=hello"
 HTTP 200
 ```
 
+<img width="908" height="295" alt="image" src="https://github.com/user-attachments/assets/a1a5acf8-0686-4a23-9898-27bddb13f142" />
+
+
 Example Service B log (success):
 
 ```text
