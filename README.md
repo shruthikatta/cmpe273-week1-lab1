@@ -101,7 +101,7 @@ Service B stays up and returns a clear 503 — A’s crash does not take B down 
 
 ## What makes this distributed?
 
-This system is distributed because Service A and Service B are **separate processes** that communicate only over the **network** (HTTP on localhost), not by sharing memory or a single address space. Each service can start, stop, fail, and scale independently: when A is unreachable, B still runs, detects the failure via a timed-out/refused connection, logs it, and returns 503 to the client. That independent failure and network-bound collaboration is the core property of a distributed system — even when both processes happen to run on the same machine.
+This system is distributed because Service A and Service B are **separate processes** that communicate only over the **network** (HTTP on localhost), not by sharing memory or a single address space. Each service can start, stop, fail, and scale independently: when A is unreachable, B still runs, detects the failure via a timed-out/refused connection, logs it, and returns 503 to the client. That independent failure and network-bound collaboration is the core property of a distributed system, even when both processes happen to run on the same machine.
 
 ---
 
